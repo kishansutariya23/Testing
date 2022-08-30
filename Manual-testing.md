@@ -1,6 +1,11 @@
-Note:- 1) Try to watch in desktop view.
+Note:-
+ 1) Try to watch in desktop view.
+ 2) This is my hand notes for the Manual Testing course from **Youtube**.
+ 3)  <a href="https://www.youtube.com/playlist?list=PLUDwpEzHYYLseflPNg0bUKfLmAbO2JnE9" target="_blank">Youtube link</a> for the videos.
+    
 
 # Manual Testing
+
 
 > Module 1: Testing concepts(Theory) WHAT?
 
@@ -9,8 +14,9 @@ Note:- 1) Try to watch in desktop view.
 > Module 3: Agile process-Jira
 
 -------------------
+-------------------
 
-## Module 1
+# Module 1
 
 Topics Covered: Part-1
 -------------------------
@@ -23,10 +29,10 @@ Topics Covered: Part-1
 6. Error, Bug & Failure
 7. Why the software has bugs?
 
-* A Software is a collection of computer programs that helps us to perform a task.
+**SOFTWARE**:- It is a collection of computer programs that helps us to perform a task.
 
 
- Types of Software:
+Types of Software:
 
         1) System Software
             ex: Device drivers, OS, Servers, Utilities, etc
@@ -38,30 +44,30 @@ Topics Covered: Part-1
 example:-
     
      X Bank(company)------------>IT company--->develop----->test---->deliver---->X Bank
-        |                           ^
-        |__explain the requirement__|
+        |                              ^
+        |__explain the requirement_to__|
 
 
-why testing?--> to give quality product to the customer 
+**why testing?**--> to give quality product to the customer 
 
 What is Software Testing?
 ------------------------
-    => Software Testing is a part of Software development process.
-    => Software Testing is an activity to detect and identify the defect in the software.
-    => the objective of testing is to release quality product to the client.
+- Software Testing is a part of Software development process.
+- Software Testing is an activity to detect and identify the defect in the software.
+- the objective of testing is to release quality product to the client.
 
 
 
 What is Software Quality?
 -------------------------
-    => customer will decide it .
-    => Bug-free.
-    => Delivered on time
-    => within budget
-    => meets requirements and/or expectations.
-    => Maintainable by customer after getting deliverd.
+- customer will decide it.
+- Bug-free.
+- Delivered on time
+- within budget
+- meets requirements and/or expectations.
+- Maintainable by customer after getting deliverd.
 
-
+==> types of company
 
     companies
       |--> service
@@ -72,32 +78,32 @@ we have
 
 Project vs Product
 ------------------
-    => If software application is developed for specific customer based on the requirement then it is called Project
-    => If software application is developed for the multiple customer based on the market requirement then it is called Product.
+- If software application is developed for specific customer based on the requirement then it is called Project
+- If software application is developed for the multiple customer based on the market requirement then it is called Product.
      
 
 Why do we need Testing?
 ----------------------
-    to give quality product to the customer which is bugsfree,Maintainable,...
+- to give quality product to the customer which is bugsfree,Maintainable,...
 
 
 
 Error, Bug/defect & Failure
 --------------------
-    => Error:-  Human Mistake or incorrect human action
-    => Bug:-    Deviation of expecting or actual behaviour or [DEFECT]:- login successful when we give invalid crediantials ;)
-    => Failure:-end user action/Deviation identified by end-user while using the software
+- **Error**:-  Human Mistake or incorrect human action
+- **Bug**:-    Deviation of expecting or actual behaviour or [DEFECT]:- login successful when we give invalid crediantials ;)
+- **Failure**:-end user action/Deviation identified by end-user while using the software
 
 
 
 Why the software has bugs?
 --------------------------
-    > 3-5 reasons
-    > Miscommunication or no communication
-    > software complexity
-    > Programming errors
-    > changing requirement
-    > lack of skilled testers
+- 3-5 reasons
+- Miscommunication or no communication
+- software complexity
+- Programming errors
+- changing requirement
+- lack of skilled testers
 
 
 -------------------
@@ -118,17 +124,19 @@ SDLC:- Software Development Life Cycle
 It is a process used by software industry for design, develop and test Software’s
 
 we have 3P's
-P-People
-P-process
-P-Product
+* P-People
+* P-process
+* P-Product
+
 @People should follow some @process to deliver the @product
 
-    Software Development Life Cycle
-            1) requirement analysis
-            2) design
-            3) development
-            4) testing
-            5) maintenance
+Software Development Life Cycle
+----
+1) requirement analysis
+2) design
+3) development
+4) testing
+5) maintenance
 
 company will follow there own process model see next
 
@@ -162,18 +170,17 @@ we make documents in 1st step @SRS,
 
 ADVANTAGES:-
 
-    => Quality of the product will be good as it is long term project and every thing will be documented.
-    => Since requirement changes are not allowed, chances of finding bugs will be less
-    => initial investment is less since the testers are hired at the later stages.
-    => Preferred for small projects where requirement are feezed.
+- Quality of the product will be good as it is long term project and every thing will be documented.
+- Since requirement changes are not allowed, chances of finding bugs will be less
+- initial investment is less since the testers are hired at the later stages.
+- Preferred for small projects where requirement are feezed.
 
 DRAWBACK:-
-
-    => Each phase is dependent on previous phase
-    => requirement changes are not allowed
-    => If there is defect in requirement that will be continued in later phase
-    => Total investment is more because time taking for rework on defect is time consuming which leads to high investement
-    => Testing will start only after coding
+- Each phase is dependent on previous phase
+- requirement changes are not allowed
+- If there is defect in requirement that will be continued in later phase
+- Total investment is more because time taking for rework on defect is time consuming which leads to high investement
+- Testing will start only after coding
 
 
 
@@ -181,7 +188,7 @@ DRAWBACK:-
 Spiral Model
 ------------
 @iterative model
-to overcome waterfall model disadvantage we came to this model
+- to overcome waterfall model disadvantage we came to this model
 
 TAKE PIC FROM INTERNET
     
@@ -226,9 +233,10 @@ disadvantage:
 
 @@ V-model is over-coming above 2 models.
 
-prototype model is between both model
--> blue print of the software
-initial requirement from customer---> prototype--->customer--->yes--->design,coding,testing
+- **prototype model** is between above both model
+- blue print of the software
+
+    initial requirement from customer---> prototype--->customer--->yes--->design,coding,testing
 
 
 
@@ -244,18 +252,21 @@ we have 4 phases/level of testing
 
 
 @verification
+---
 Static Testing:- done on document
 -------------
 testing the project related documents @we do it through below
-    Review
-    Walkthrough
-    inspection
+
+- Review
+- Walkthrough
+- inspection
 
 
 
-### @Validation
-
-#### dynamic testing:- done on code
+@Validation
+---
+dynamic testing:- done on code
+---
 testing the actual software
 
 - white box techniques:- 
@@ -275,32 +286,32 @@ testing the actual software
 
 Verification/Validation
 ----------------------
-Verification checks whether we are building the right product
-Focus on the documentation
-verification typically involves
-    Review
-    Walkthrough
-    inspection
+- **Verification** checks whether we are building the right product
+- Focus on the documentation
+- verification typically involves
+    - Review
+    - Walkthrough
+    - inspection
 
+=
 
-Validation checks whether we are building the product right
-takes place after verification are completed
-Focus on software
-Validation typically involves actual software
-unit,integration, system UAT testings.
+- **Validation** checks whether we are building the product right
+- takes place after verification are completed
+- Focus on software
+- Validation typically involves actual software
+- unit,integration, system UAT testings.
 
 ADVANTAGES
-
-    testing is involved in each and every phase
+- testing is involved in each and every phase
 
 disadvantage
-
-    documentation is more
-    initial investement is more
+- documentation is more
+- initial investement is more
 
 -------------
+
 Topics Covered: Part-3
-------------------------
+-
 1. Static Testing & Dynamic Testing
 2. Review, Walkthrough & Inspection
 3. QA & QC & QE
@@ -312,98 +323,91 @@ Topics Covered: Part-3
 
 
 STATIC TESTING TECHNIQUE 
-    1) Review
-    2) Walkthrough
-    3) Inspection
+---
+1) Review
+2) Walkthrough
+3) Inspection
 
 DYNAMIC TESTING TECHNIQUE
-    1) UNIT TESTING
-    2) INTEGRATION TESTING
-    3) SYSTEM TESTING
-    4) UAT
+---
+1) UNIT TESTING
+2) INTEGRATION TESTING
+3) SYSTEM TESTING
+4) UAT
 
 
 REVIEW (any buddy can do this at any time)
 --------------------------
 Conducts on document to ensure correctness and completness
-    requirement Review
-    design Review
-    code Review
-    test plan Review
-    test case Review,....
+- requirement Review
+- design Review
+- code Review
+- test plan Review
+- test case Review,....
 
 Walkthrough(informal review)
 --------------------------
-Author reads the documents or code and discuss with peers.
-it's not pre-planned and can be done whenever required
-also Walkthrough does not have minutes of the meet
+- Author reads the documents or code and discuss with peers.
+- it's not pre-planned and can be done whenever required
+- also Walkthrough does not have minutes of the meet
 
-inspection
+Inspection
 --------------
-it is more formal review type.
-in which at least 3-8 people will sit in meeting 1-reader, 2-writer, 3-moderator plus concerned
-it will have a proper schedule which will be intimated via email to the concerned developer/tester
+- it is more formal review type.
+- in which at least 3-8 people will sit in meeting 1-reader, 2-writer, 3-moderator plus concerned
+- it will have a proper schedule which will be intimated via email to the concerned developer/tester
 
 
 
 QA VS QC
 -----------
-   QUALITY ACURANCE AND QUALITY CONTROL 
 
-    ==> QA is process related @define process
-        QC is the actual testing of the software
-    
-    ==> QA Focuses on building in quality
-        QC Focuses on testing for quality
-    
-    ==> QA is preventing defects
-        QC is detecting defects
-    
-    ==> QA is process oriented
-        QC is product oriented
-    
-    ==> QA for entire life Cycle
-       QC for testing part in SDLC
+|   QUALITY ACURANCE | QUALITY CONTROL| 
+|----------------|-------------------|
+| QA is process related @define process| QC is the actual testing of the software|
+|QA Focuses on building in quality|QC Focuses on testing for quality|
+|QA is preventing defects |QC is detecting defects |
+ |QA is process oriented |QC is product oriented|
+ |QA for entire life Cycle |QC for testing part in SDLC
 
-
-    P-People  ----- QC(tester)
-    P-process ----- QA
-    P-product
-
-
+reference:-
+ - P-People  ----- QC(tester) 
+ - P-process ----- QA 
+ - P-product
 
 SDLC
+- requirement analysis
+- DESIGN
+- CODING
+- TESTING           
+- deployment
+- MaintainaNCE
 
-    requirement analysis
-    DESIGN
-    CODING
-    TESTING           
-    deployment
-    MaintainaNCE
+ 
 
-;
-
-
-## QE:-QUALITY Engineering 
+QE:-QUALITY Engineering 
+-----
 done by AUTOMATION TESTING AS THEY WRITE CODE
  
- AUTOMATION-tester(CODE) PERSON COME HERE 
+AUTOMATION-tester(CODE) PERSON COME HERE 
+
+Level of testing
+--
+- Unit Testing
+- Integration Testing
+- System Testing
+- User Acceptance Testing (UAT)
+
+explanation
+
+- **Unit Testing**:- single module we will test
+- **Integration Testing**:- we will integrate all single module and test as whole module
+- **System Testing**:- we will test the over all functionality of the application based on the customer requirement
+- **User Acceptance Testing (UAT)**:- tester along with the use will make the testing here
 
 
-
-    Level of testing
-        Unit Testing
-        Integration Testing
-        System Testing
-        User Acceptance Testing (UAT)
-
-- Unit Testing:- single module we will test
-- Integration Testing:- we will integrate all single module and test as whole module
-- System Testing:- we will test the over all functionality of the application based on the customer requirement
-- User Acceptance Testing (UAT):- tester along with the use will make the testing here
-
-
-## Unit Testing:-  
+Unit Testing:-  
+---
 - A unit is a single component or module of the software
 - it is conducted on a single program or small module
 - it is white box testing techniques
@@ -415,7 +419,9 @@ done by AUTOMATION TESTING AS THEY WRITE CODE
         - loops coverage
     - mutation testing :- testing code with multiple sceniario like giving different username with password
 
-## Integration Testing:-
+
+Integration Testing:-
+---
 - It performed between 2 or more moduled
 - It Focuses on checking data communication between multiple modules
 - it is white box testing techniques as well as black box type
@@ -430,7 +436,7 @@ so it is performed by tester also
 
 Types of Integration testing
 ---
-- *Incremental Integration Testing:- 
+- ***Incremental Integration Testing**:- 
 
    Incrementally adding the modules and testing the data flw between the modules
 
@@ -445,6 +451,7 @@ Types of Integration testing
                 |--> sandwich/hybrid approaches:- combination of the above          
   
 - Non-Incremental Integration Testing:-
+
     adding all the modules in a single shot and test the data flow between modules
 
     DRAWBACK:-
@@ -452,21 +459,24 @@ Types of Integration testing
     2) If you find any defect we cant understand the root cause of the defect
 
 
-- System Testing:-
- actual tester will work here
+System Testing:-
+---
+   actual tester will work here
 Testing over all functionality of the application with respective client requirement
-it is black box testing technique
+
+  it is black box testing technique
 this testing is conducted by testing team
 after completion of the componentand integration level of testing we start system testing
 Before conducting system testing we should know the customer requirement@ we will read the document.
 
-    system testing Focuses on below aspects
+system testing Focuses on below aspects
+--
+- user interface testing(GUI)
+- functional testing
+- non-functional testing: special team with different env. needed
+- usability testing:- user Manual and help guide when we open new software come here
 
-        -> user interface testing(GUI)
-        -> functional testing
-        -> non-functional testing: special team with different env. needed
-        -> usability testing:- user Manual and help guide when we open new software come here
-
+explanation
 
 - UAT After completion of the system testing UAT team conducted this testing in 2 Levels
 tester and user, end-user will help here to make a final product which can be deployed in production.
@@ -476,9 +486,9 @@ tester and user, end-user will help here to make a final product which can be de
     - Beta testing:- end user will use as pre-release version 
 
 
- 
-# Topics Covered: Part-4
-
+ ---------------
+Topics Covered: Part-4
+----
     System Testing
           |--> GUI Testing
           |--> usability testing    
@@ -528,16 +538,16 @@ Checks how easily the end users are able to understand and operate the applicati
 
 functional Testing
 ---------------
-==> working on customer requirement
+- working on customer requirement
 functionality is nothing but behaviour of the application according to customer requirement 
-it talks about how your feature should work
+- it talks about how your feature should work
     
-    > object properties testing
-    > database testing
-    > error handling
-    > calculation/manipulation testing
-    > links existence & links Execution
-    > cookies & sessions
+    - object properties testing
+    - database testing
+    - error handling
+    - calculation/manipulation testing
+    - links existence & links Execution
+    - cookies & sessions
 
  
 object property testing:-check the property of object present on the application
@@ -560,13 +570,13 @@ Checking DB operate w.r.t user operations.
 
 for separate skill set 
 
-    -> Table & column level validation (column type.column length, no.of columns,...)
-    -> Relation between the table 
-    -> functions
-    -> procedures
-    -> triggers
-    -> index
-    -> views
+- Table & column level validation (column type.column length, no.of columns,...)
+- Relation between the table 
+- functions
+- procedures
+- triggers
+- index
+- views
     etc,.....
 
 
@@ -575,9 +585,13 @@ Error handling Testing:
 ----
 tester verify the error message while performing incorrect action on the application
 
-    -->error message should be readable
-    -->user understandable/simple language
+- error message should be readable
+- user understandable/simple language
+
+,
+
     ex:- when user give username and password
+
             incorrect:-incorrect data 
             correct  :-invalid username 
  
@@ -585,10 +599,10 @@ tester verify the error message while performing incorrect action on the applica
 
 calculation/manipulation testing
 -------
-tester should 
+- tester should 
 all calculation related testing like when ever we dedect money from bank it should be updates
 
---> and when ever we try to click on any operation ex:calculator it should work good in terms of any i/p(+,-)
+- and when ever we try to click on any operation ex:calculator it should work good in terms of any i/p(+,-)
 
 
 links existence & links Execution
@@ -622,8 +636,8 @@ ex:- banking application-->
 
 ONCE FUNCTIONALITY IS STABLE THEN ONLY NON-FUNCTIONALITY TESTING WILL START
 
-# Non-functional
-
+Non-functional
+----
     Non-functional testing [we required special skilled person and specific Environment to work]
         |-->Performance testing
         |      |--> load testing
@@ -638,31 +652,32 @@ ONCE FUNCTIONALITY IS STABLE THEN ONLY NON-FUNCTIONALITY TESTING WILL START
         |--> Sanitation/Garbage Testing
 
 
-    ==> Its all on customer expectations NOT on customer requirement
-    ==> like my expectations are it should be secure, fast loading when we have heavy traffic, it should be unhackable(for banking domain)
+- Its all on customer expectations NOT on customer requirement
+- like my expectations are it should be secure, fast loading when we have heavy traffic, it should be unhackable(for banking domain)
     
     
-    perform testing :- speed of application 
-       load testing :- increasing load(person visiting ) on the application and check speed of application
-       stress testing :-suddenly increasing/decreasing load like 5-->50-->20-->100 (offer time in amazon,..)
-       volume testing :-how much data can be handle by application its based on DB 
+    - **perform testing** :- speed of application 
+    - **load testing** :- increasing load(person visiting ) on the application and check speed of application
+    - **stress testing**:-suddenly increasing/decreasing load like 5-->50-->20-->100 (offer time in amazon,..)
+    - **volume testing** :-how much data can be handle by application its based on DB 
     we have performance matrix for checking which have preformed well
 
 
-# security testing
-
+security testing
+---
 how secure our application mostly for banking related application
---> special person will perform this like dedicated team for this who have security knowledge in terms of https,hacking...
+- special person will perform this like dedicated team for this who have security knowledge in terms of https,hacking...
 
     we mainly go with 
-       AUTHENTICATION--> user are valid or not
-       Autherization/access control:--> permission of the valid user
+
+    - AUTHENTICATION--> user are valid or not
+    - Autherization/access control:--> permission of the valid user,,
            only have a specific feature access ex:- we are not allowed to access the other department files ;)
     
 
 
 
-recovery testing:-->in gmail all will be save in draft until we send them or app get crashed  
+**recovery testing**:-->in gmail all will be save in draft until we send them or app get crashed  
 
     compatibility testing
          |--> forward compatibility
@@ -672,13 +687,13 @@ recovery testing:-->in gmail all will be save in draft until we send them or app
          |-->hardware compatibility:- it is called configuration testing
          |     the application should be work on different hardware like small ram based device and different OS based devices....
     
-forward&backward:--
+**forward&backward**:--
 new software should be upgrade with old version
 old software can be runned on new devices 
 
 
-## configuration testing:-
-
+configuration testing:-
+---
 comes under compatibility testing under hardware testing
 
 
@@ -692,9 +707,9 @@ installation testing:-
 
 Sanitation/Garbage Testing:
 ---------------------------
-    --> If any application provides extra feature/functionality then we conside them as bug.
-    unwanted stuff like code 
-            Bug (non used code of previous version/installation) we should say to programmer to remove it
+- If any application provides extra feature/functionality then we conside them as bug.
+- unwanted stuff like code 
+- Bug (non used code of previous version/installation) we should say to programmer to remove it
  
 |Non-functional Testing  |  Functional Testing |
 |----------------------|---------------|
@@ -704,20 +719,21 @@ Sanitation/Garbage Testing:
 |Functional testing takes place before Non-functional testing.| Non-Functional testing performed after finishing Functional testing.|
 
 
- 
-# Topics Covered: Part-5
-    Regression testing 
-    re-testing 
-    regression vs re-testing 
-    Smoke testing and sanity testing  
-    exploratory testing  
-    adhoc testing 
-    monkey testing 
-    Difference b/w exploratory  vs adhoc vs monkey 
-    positive and negative testing  
-    positive vs negative TCs  
-    end to end testing  
-    localization and globalization/internalization testing 
+ -------------------------------------
+Topics Covered: Part-5
+---
+- Regression testing 
+- re-testing 
+- regression vs re-testing 
+- Smoke testing and sanity testing  
+- exploratory testing  
+- adhoc testing 
+- monkey testing 
+- Difference b/w exploratory  vs adhoc vs monkey 
+- positive and negative testing  
+- positive vs negative TCs  
+- end to end testing  
+- localization and globalization/internalization testing 
 
 
 
@@ -776,9 +792,8 @@ basic level of testing before indepth testing is called smoke testing
 
  ==> #build is stable or not to perform other testings
 
---> in *initial days* when developer start writing code we will be getting unstable builds so tester will be performing smoke testing on it as it is not a complete build, all small/un-stable builds are tested by smoke
-
---> when a complete build(stable build) is done and send to tester at that time sanity testing is done on all functions/feature(login, nav, link ,... entire things )but not in deep 
+- in *initial days* when developer start writing code we will be getting unstable builds so tester will be performing smoke testing on it as it is not a complete build, all small/un-stable builds are tested by smoke
+- when a complete build(stable build) is done and send to tester at that time sanity testing is done on all functions/feature(login, nav, link ,... entire things )but not in deep 
 
 
 Smoke and Sanity Testing come into the picture after build release.
@@ -940,8 +955,9 @@ localization and globalization/internalization testing
     - It testes the specific currency format, mobile number format and address format is working properly or not.
     - For example, Baidu.com supports only chinese language and can be accessed only by people of few countries. Hence it is a localized product.
 
- 
-# Topics Covered: Part-6
+ ---------------
+Topics Covered: Part-6
+-------------------
 1. Test Case Design Techniques
 2. Equivalence Class Partitioning
 3. Boundary Value Analysis (BVA)
