@@ -951,6 +951,265 @@ localization and globalization/internalization testing
 
 
 
+Test Case Design Techniques
+--------------------------
+Used to prepare data for testing
+
+1) reduce the data
+2) more coverage
+ex:- if we have age form that take a certain range of data(18-25) then we have to test all no. from 0-oo but we will reduce the data with more coverage
+
+- test design techniques helps to design better cases
+- Reduce the number of test cases to be executed
+- 
+
+
+    techniques
+       |--> Equivalence Class Partitioning (ECP)
+       |--> Boundary Value Analysis (BVA)
+       |--> Decision Table
+       |--> State Transition
+       |--> Error Guessing
+
+
+Input domain testing
+-------------------
+- the value will be verified in the text box/input fields
+- we will be using ECP & BVA
+
+
+Equivalence Class Partitioning (ECP)
+-------------------------
+* Partition data into various classes and we can select data according to class then test. It reduce the number of test-cases and saves time for testing.
+
+EXAMPLE 1:-
+
+    Enter a Number: []   * Allow Digits from 1-500
+
+| Normal Test Data    |   Divide values into Equivalence classes |Test Data using ECP|
+|---------------------|---------------------------------------|-------------------------|
+|1| | |  
+2 | | |
+3         |  -100 to0   ->-50 (Invalid) |-50 |
+4         |       1-100 -> 30 (Valid) | 30 |
+ .         |  101 - 200 -> 160 (Valid) | 160 |
+  .        |  201 - 300 -> 250 (Valid) | 250 |
+   .       |  301 - 400 -> 320 (Valid) | 320 |
+.      |    401-500 -> 450 (Valid) | 450 |
+500          |   501-600->550. (invalid)| 550 |
+
+
+- just take 1 value from the class and test it if it is valid then NO need to check remaining values
+
+EXAMPLE 2:-
+
+    Name: [__]   * Allow only alphabets
+
+| Divide values into Equivalence Classes | Test Data using ECP |
+|---------------|-------------------|
+|A..Z > (Valid) | XYZ|
+|a..z > (Valid) |zyz|
+|Special Characters > (Invalid)| @#$%|
+|Spaces > 250 (Invalid) |Xy z|
+|Numbers > 320 (Invalid)| jis|
+
+
+- Value check
+- classify/divide/Partition the data in to multiple classes
+
+
+Boundary Value Analysis (BVA)
+----------------------------
+- Concentrates on Boundary value
+- BVA technique used to check Boundaries of the input.
+-
+
+     Enter a Age: [__] * Allow Digits from 18-35(min-max)
+- visualization of range
+
+     
+                                  |                                         |
+                     |            |                             |           |
+      ----|----------|------------|-----------------|-----------|-----------|
+                     |            |                             |           |
+                                  |
+      Min-1=17    Min=18      Min+1=19          Max-1=34     Max=35    Max+1=36
+
+ 
+
+
+- Min=8 (Pass)     -------  Max = 35 (Pass)
+- Min-1=17 (Fail) ----   Max-1 =34 (Pass)
+- Min+1 =19 (Pass)--   Max+1 =36 (Fail)
+
+ <br>
+
+- by just checking +1 and -1 for max and min we will decide that a age is valid or not 
+- if more than max and less than min are give then it invalid input
+- and no. between the given range are valid
+- so by passing just 6 values we will test the fields in this technique
+- just 2 values should fail and remaining should pass
+
+
+Decision Table technique
+---------------
+- If we have more number of condition/action then we use decision table technique
+- Decision Table is also called as Cause-Effect Table.
+- This technique will be used if we have more conditions and correspondingactions.
+- In Decision table technique, we deal with combinations of inputs.
+- To identify the test cases with decision table, we consider conditions and actions.
+
+example:-
+==> Take an example of transferring money online to an account which is already added and approved.
+
+- Here the **conditions** to transfer money are
+    - Account already approved.
+    - OTP (one time password) matched
+    - Sufficient money in the account
+
+- And the **actions** performed are
+   -Transfer money
+   - Show a message as insufficient amount
+   -Block the transaction incase of suspicious transaction
+
+
+table
+TC:- TEST CASE 
+
+| ||TC1|TC2|TC3|TC4|TC5|
+|--|--|--|--|--|--|--|
+|Condition1 |‘Account already approved |TRUE| TRUE| TRUE |TRUE| FALSE|
+|Condition2 |‘OTP Matched |TRUE| TRUE |FALSE |FALSE |x|
+|Condition3 |Sufficient Money in the Account |TRUE| FALSE| TRUE| FALSE| x|
+|‘Action1,  |Transfer Money |Execute| | | | |
+|Action2    |‘Show message ‘insufficient Amount’| | Execute| | | 
+|‘Action3   |Block the transaction Incase of Suspicios Transaction | | | Execute| Execute| x|
+
+    note:- TC1:- valid 
+           Tc2-TC n-1 :- Negative
+           TC n :- Invalid
+
+ 
+
+State Transition
+----------------
+- In State Transition technique changes in input conditions change the state of the Application.
+- This testing technique allows the tester to test the behavior of an AUT.
+- The tester can perform this action by entering various input conditions in a sequence.
+- In State transition technique, the testing team provides positive as well as negative input test values for evaluating the system behavior.
+
+its same as state diagram in VLSI [ece]
+
+example:-
+- Takes an example of login page of an application which locks the user name after 3 wrong attempt of password
+- 
+
+     first-attempt(S1)---------->----PASS--------->--
+         |                                           |
+        FAIL                                         |
+         |                                           V
+         V                                           |
+     Second-attempt(S2)--------->---PASS--------->----HOME-PAGE(S4)
+         |                                           |
+        FAIL                                         ^
+         |                                           |
+         V                                           |
+     Third-attempt(S3)--------->----PASS--------->----
+        |
+        V
+       FAIL-------->------------ACCOUNT-locked(S5)
+
+
+| STATE | LOGIN | CORRENT PASSWORD | INCORRECT PASSWORD|
+|------|--------|----------------|--------------|
+| first attempt | S4 |S2|
+| Second attempt | S4|S3|
+| Third attempt | S4 | S5|
+| Home page | | |
+|Display a message as 'account locked, please aonsult administration'| | |
+
+
+
+
+Error Guessing
+--------------------
+
+* Error guessing is one of the testing techniques used to find bugs in a software application based on tester’s prior experience.
+* In Error guessing we don’t follow any specific rules.
+* It depends on Tester Analytical skills and experience.
+* Some of the examples are:
+    ~ Submitting a form without entering values.
+    ~ Entering invalid values such as entering alphabets in the numeric field.
+
+ 
+ 
+------
+# Topics Covered: Part-7
+ STLC (Software Testing Life Cycle)
+-----------------------------------------------------
+1. Test Planning
+2. Test Design/Development
+3. Test Execution
+4. Defect Reporting & Tracking
+5. Test Closure
+
+SDLC:- requirement, Design, coding, [_T_E_S_T_I_N_G], deployment, maintenance
+
+we have separate life Cycle for TESTING
+        0. Requirement Analysis
+        1. Test Planning [5+ year experience person will do this]
+        2. Test Design/Development with environment Setup
+        3. Test Execution
+        4. Defect/Bug Reporting & Tracking
+        5. Test Closure
+
+- STLC is subset of SDLC
+-------->IMPORT STLC TABLE PNG<-------------
+
+
+----------- 
+# Topics Covered: Part-8
+ 1. Test Plan
+2. Use Case Vs Test Scenario Vs Test Case
+3. Test Case Template
+4. RTM (Requirement Traceability Matrix)
+5. Test Environment Setup & Test Execution
+6. Defects/Bugs
+7. Contents is Defect Report
+8. Defect Classification (Severity & Priority)
+
+- in this topic we will see the STLC in detail
+
+Test plan Contents
+---------------
+- A Test Plan is a document that describes the test scope, test strategy, objectives, schedule, deliverables and resources required to perform testing for a software product.
+ 
+- Test plan template contents:
+    - Overview
+    - Scope
+        - Inclusions
+        - Test Environments
+        - Exclusions
+
+    - Test Strategy
+    - Defect Reporting Procedure
+    - Roles/Responsibilities
+    - Test Schedule
+    - Test Deliverables
+    - Pricing
+    - Entry ond Ext rteria
+    - ‘Suspension and Resumption Criteria.
+    - Tools
+    - Risks and Mitigations
+    - Approvals
+    
+
+
+
+
+
+
+
 
 
 
