@@ -11,7 +11,7 @@ Note:-
 
 > Module 2: Testing Project(Practice) HOW?
 
-> Module 3: Agile process-Jira
+> Module 3: Agile Testing + Jira Tool
 
 -------------------
 -------------------
