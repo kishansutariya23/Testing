@@ -62,3 +62,15 @@ Release and Iteration Planning
 
 
 # Techniques & Tools
+.
+.
+
+.
+.
+
+.
+.
+
+.
+its pending 
+but you can go with this ---> <a href="https://github.com/kishansutariya23/Testing/blob/main/Agile%20Testing.md">agile testing</a>
