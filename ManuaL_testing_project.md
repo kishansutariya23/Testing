@@ -129,3 +129,42 @@ Topics :
 ------------
 1. RTM (Requirement Traceability Matrix)
 2. Test Cases
+
+- For writing TC(Test Cases) we will refere TS(Test Scenario) and FRS
+
+Note:- 
+- We will make 1st sheet as version history sheet in excel
+<img src='./images/version sheet.jpg'>
+
+- last version is the updated application.
+
+- For each TS we will make new sheet so that the TC of that particular TS are in a single sheet
+- EX: consider excel sheet and follow below
+    - sheet 1:- version history
+    - sheet 2:- TS
+    - sheet 3:- TC for TS_1
+    - sheet 4:- TC for TS_2
+    - sheet 5:- TC for TS_3
+    - .
+    - .
+    - .
+Check below how to write TC for TS
+
+<br>
+
+<img src="./images/TC_001.jpg">
+
+<img src="./images/TC_002.jpg">
+
+
+- make a habit of writing the TC from starting(means it should not depend on previous TC )[so write all step again in new TC]
+
+- in some cases you can write Test Data as follow like type of input for single column for validation
+
+<img src="./images/TC_003.jpg">
+
+
+- Parallely while we are writing TC we have to write RTM 
+
+<img src='./images/matrix.jpg'>
+<img src='./images/matrix_2.jpg'>

@@ -30,8 +30,9 @@ Note:-
  
     - [Agile](./Agile%20Testing.md)
     - [JIRA](./)
+
 2. Automation Testing
-    - 
+    - .
     -
     -
 
